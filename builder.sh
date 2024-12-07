@@ -107,7 +107,7 @@ sleep 3
 echo_c 33 "\nUpdating Builder"
 git pull
 
-rm -rf openipc
+# rm -rf openipc
 if [ ! -d "$FIRMWARE_DIR" ]; then
     echo_c 33 "\nDownloading Firmware"
     git clone --depth=1 https://github.com/OpenIPC/firmware.git "$FIRMWARE_DIR"
