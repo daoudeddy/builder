@@ -20,7 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         platform:
-          - t31_lite_tuya-sc2332
+          - t31_lite_tuya_sc2332
           
     steps:
       - name: Checkout source
