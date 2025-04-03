@@ -10,15 +10,19 @@ fw_setenv upgrade 'https://github.com/OpenIPC/builder/releases/download/latest/s
 #
 # Set custom majestic settings
 #
-cli -s .system.staticDir /var/www/majestic
+cli -s .video0.codec h264
 cli -s .image.mirror false
 cli -s .image.flip false
 cli -s .nightMode.irCutPin1 79
 cli -s .nightMode.irCutPin2 78
 cli -s .nightMode.backlightPin 52
 cli -s .nightMode.colorToGray true
-cli -s .audio.speakerPin 38
-cli -s .video0.codec h264
+cli -s .audio.inputChannel 1
+cli -s .audio.outputEnabled true
+cli -s .audio.outputVolume 80
+cli -s .audio.speakerPin 15
+cli -s .audio.speakerPinInvert true
+cli -s .audio.srate 48000
 #
 #
 # Set wlan device and credentials if need
